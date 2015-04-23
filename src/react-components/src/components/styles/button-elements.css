@@ -1,0 +1,69 @@
+.element {
+  transition: all;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+button.element,
+.btn.element {
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  min-width: 100px;
+  min-height: 40px;
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+button.element:hover,
+.btn.element:hover {
+  font-size: 14px;
+  color: #ffffff;
+}
+button.element.small,
+.btn.element.small {
+  text-transform: uppercase;
+  min-width: 60px;
+  min-height: 30px;
+  font-size: 11px;
+}
+button.element.small:hover,
+.btn.element.small:hover {
+  font-size: 9px;
+  text-decoration: none;
+}
+button.element.medium,
+.btn.element.medium {
+  min-width: 140px;
+  min-height: 40px;
+  font-size: 21px;
+}
+button.element.medium:hover,
+.btn.element.medium:hover {
+  font-size: 19px;
+  text-decoration: none;
+}
+button.element.large,
+.btn.element.large {
+  min-width: 180px;
+  min-height: 50px;
+  font-size: 24px;
+}
+button.element.large:hover,
+.btn.element.large:hover {
+  font-size: 22px;
+  text-decoration: none;
+}
+button.element.xlarge,
+.btn.element.xlarge {
+  min-width: 200px;
+  min-height: 50px;
+  font-size: 26px;
+}
+button.element.xlarge:hover,
+.btn.element.xlarge:hover {
+  font-size: 24px;
+  text-decoration: none;
+}
