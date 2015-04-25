@@ -1,0 +1,53 @@
+@import "elements";
+
+.button(@min-w:60px,@min-h:30px,@font-size:11px){
+  min-width: @min-w;
+  min-height: @min-h;
+  font-size: @font-size;
+  &:hover {
+    font-size: @font-size - 2 ;
+    text-decoration: none;
+  }
+}
+
+.element {
+
+  button& , .btn& {
+    //padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    min-width: 100px;
+    min-height: 40px;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    &.small {
+      text-transform: uppercase;
+      .button();
+
+    }
+
+    &.medium {
+      .button(140px,40px,21px);
+    }
+
+    &.large {
+      .button(180px,50px,24px);
+    }
+
+    &.xlarge {
+      .button(200px, 50px, 26px)
+    }
+
+  }
+
+}

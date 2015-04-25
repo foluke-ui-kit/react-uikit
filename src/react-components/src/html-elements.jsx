@@ -3,7 +3,7 @@
 var React = require('react');
 var $ = require('jquery');
 var Elements = require('./components/react-elements.jsx');
-var Icons = require('./components/svg-icons/component.jsx');
+var Icons = require('./components/svg-icons-kit/component.jsx');
 /**
  *
  * @type {HTMLElement}

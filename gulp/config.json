@@ -72,11 +72,8 @@
       "./src/react-components/src/**/*.*"
     ],
     "reactComponents": [
-      "./src/react-components/src/**/*.*",
-      "./samps/*.*",
-      "./webpack.config.js",
-      "./webpack.config.js",
-      "./bs-config.js"
+      "./src/react-components/src/components/react-buttons-kit/*.jsx",
+      "./src/react-components/src/components/svg-icons-kit/**/*.jsx"
     ],
     "reactBuild" : "builds/react"
   },

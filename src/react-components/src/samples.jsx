@@ -8,8 +8,8 @@ var $ = require('jquery');
  */
 var Hello = require('./components/react-hello.jsx');
 var Element = require('./components/react-elements.jsx');
-var Icn = require('./components/svg-icons/component.jsx');
-var Svg = require('./components/svg-icons/react-iconsets.jsx');
+var Icn = require('./components/svg-icons-kit/component.jsx');
+var Svg = require('./components/svg-icons-kit/react-iconsets.jsx');
 
 
 var component = document.querySelector("react-hello");

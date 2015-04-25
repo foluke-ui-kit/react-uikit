@@ -55,10 +55,10 @@ gulp.task('build:react', function(){
  */
 gulp.task('build:react-components', function(){
 
-    gulp.src(config.reactComponents)
-        .pipe(newer(config.reactBuild + '/components'))
+    gulp.src(config.reactComponents, {base : './src/react-components/src/components/'})
+        .pipe(newer(config.reactBuild))
         .pipe(print())
-        .pipe(gulp.dest(config.reactBuild + '/components'));
+        .pipe(gulp.dest(config.reactBuild));
 
 })
 
