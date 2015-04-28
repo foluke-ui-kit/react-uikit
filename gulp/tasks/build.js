@@ -44,7 +44,7 @@ gulp.task('build:gulp', function(){
 gulp.task('build:react', function(){
 
     gulp.src(config.reactFiles, {base : './'})
-        .pipe(newer(config.reactBuild))
+        .pipe(newer(config.reactBuild + "/uikit"))
         .pipe(print())
         .pipe(gulp.dest(config.reactBuild + "/uikit"));
 
