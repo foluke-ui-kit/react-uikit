@@ -10,6 +10,7 @@ var Hello = require('./components/react-hello.jsx');
 var Element = require('./components/react-elements.jsx');
 var Icn = require('./components/svg-icons-kit/component.jsx');
 var Svg = require('./components/svg-icons-kit/react-iconsets.jsx');
+var SvgIcon = require('./components/svg-icons-kit/svg-icons.jsx');
 
 
 var component = document.querySelector("react-hello");
@@ -22,8 +23,8 @@ React.render(<Hello name="Shawn..." />, document.getElementById('hello'));
 React.render(<Hello.Child />, document.getElementById('test'));
 React.render(<Element.Copyright slug="All rights reserved" />, copyright);
 React.render(<Icn.Social />, document.getElementById('icon'));
-React.render(<Svg.Iconset iconID="directions" iconsetUrl="icon.xml" size="48" fill=""  />, document.getElementById('iconset'));
-
+React.render(<Svg iconID="directions" iconsetUrl="icon.xml" size="48" fill="red"  />, document.getElementById('iconset'));
+React.render(<SvgIcon />, document.getElementById('svgicon'));
 $.fn.reactButtons = function (settings) {
 
     settings = $.extend({
